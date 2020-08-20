@@ -31,15 +31,15 @@ namespace GradeBook.GradeBooks
             {
                 return 'A';
             }
-            if (averageGrade >= gradeList[(threshold -1)*2])
+            if (averageGrade >= gradeList[(threshold * 2) -1])
             {
                 return 'B';
             }
-            if (averageGrade >= gradeList[(threshold - 1) * 3])
+            if (averageGrade >= gradeList[(threshold *3) -1])
             {
                 return 'C';
             }
-            if((averageGrade >= gradeList[(threshold - 1) * 4]))
+            if((averageGrade >= gradeList[(threshold * 4) -1]))
             {
                 return 'D';
             }
