@@ -27,6 +27,10 @@ namespace GradeBook.GradeBooks
             gradeList.Reverse();
             int threshold = (int)Math.Ceiling(Students.Count * 0.2);
 
+            if (averageGrade >= gradeList[threshold -1] )
+            {
+                return 'A';
+            }
 
                 return 'F';
 
