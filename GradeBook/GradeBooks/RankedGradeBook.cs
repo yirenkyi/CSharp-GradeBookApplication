@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace GradeBook.GradeBooks
 {
@@ -19,10 +18,15 @@ namespace GradeBook.GradeBooks
 
             }
 
+            var gradeList = new List<double>();
 
-
-            var gradeList = Students.OrderByDescending(e => e.AverageGrade).Select(e => e.AverageGrade).ToList();
-            int threshold = (int)Math.Ceiling(Students.Count * 0.2);
+            foreach (var student in Students)
+            {
+                gradeList.Add(student.AverageGrade);
+            }
+            gradeList.Sort();
+            gradeList.Reverse();
+            int threshold = (int)Math.Ceiling(gradeList.Count * 0.2);
 
             if (averageGrade >= gradeList[threshold -1] )
             {
