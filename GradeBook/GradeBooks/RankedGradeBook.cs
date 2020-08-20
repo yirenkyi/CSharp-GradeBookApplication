@@ -1,10 +1,11 @@
 ﻿using System;
 namespace GradeBook.GradeBooks
 {
-    public class RankedGradeBook
+    public class RankedGradeBook : BaseGradeBook
     {
-        public RankedGradeBook()
+        public RankedGradeBook(string name):base(name)
         {
+            Type = Enums.GradeBookType.Ranked;
         }
     }
 }
