@@ -25,7 +25,7 @@ namespace GradeBook.GradeBooks
                 gradeList.Add(student.AverageGrade);
             }
             gradeList.Sort();
-            int threshold = (int)Math.Ceiling(gradeList.Count*.2);
+            int threshold = (int)Math.Ceiling(gradeList.Count * 0.2);
 
             if (averageGrade >= gradeList[threshold -1] )
             {
