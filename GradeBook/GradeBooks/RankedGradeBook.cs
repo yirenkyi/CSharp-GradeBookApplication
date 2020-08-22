@@ -24,7 +24,7 @@ namespace GradeBook.GradeBooks
             {
                 gradeList.Add(student.AverageGrade);
             }
-            gradeList.Sort()
+            gradeList.Sort();
             gradeList.Reverse();
             int threshold = (int)Math.Ceiling(gradeList.Count * 0.2);
 
