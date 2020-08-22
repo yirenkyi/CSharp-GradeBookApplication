@@ -37,7 +37,7 @@ namespace GradeBook.UserInterfaces
             if (parts.Length != 3)
             {
                 Console.WriteLine("Command not valid, Create requires a name" +
-                    "and a type of gradebook.");
+                    "and type of gradebook.");
                 return;
             }
 
